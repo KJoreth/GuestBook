@@ -1,0 +1,34 @@
+﻿@model EntriesViewModel
+
+<div class="row d-flex justify-content-center align-items-center my-5">
+    <div class="col col-2 d-flex justify-content-end">
+        <button class="btn btn-primary mx-2" disabled="@(Model.CurrentPageIndex == 1)" type="button" onclick="location.href='@Url.Action("Show", "Entry", new {id = 1})'">
+            &lt;&lt;
+        </button>
+        <button class="btn btn-primary" disabled="@(Model.CurrentPageIndex == 1)" type="button" onclick="location.href='@Url.Action("Show", "Entry", new {id = Model.CurrentPageIndex - 1})'">
+            &lt;
+        </button>
+    </div>
+
+    <div class="col col-2">
+        <form asp-action="ShowPost" class="d-flex flex-column align-items-center">
+            <div class="form-group d-flex flex-column align-items-center">
+                <label asp-for="CurrentPageIndex" class="form-label">Page (max:@Model.PageCount)</label>
+                <input asp-for="CurrentPageIndex" class="form-control text-center" min="1" max="@Model.PageCount" />
+            </div>
+            <div class="row mt-3">
+                <button type="submit" class="btn btn-primary">Go</button>
+            </div>
+            
+        </form>
+    </div>
+
+    <div class="col col-2 d-flex">
+        <button class="btn btn-primary mx-2" disabled="@(Model.CurrentPageIndex == Model.PageCount)" type="button" onclick="location.href='@Url.Action("Show", "Entry", new {id = Model.CurrentPageIndex + 1})'">
+            &gt;
+        </button>
+        <button class="btn btn-primary" disabled="@(Model.CurrentPageIndex == Model.PageCount)" type="button" onclick="location.href='@Url.Action("Show", "Entry", new {id = Model.PageCount})'">
+            &gt;&gt;
+        </button>
+    </div>
+</div>

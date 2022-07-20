@@ -1,0 +1,15 @@
+﻿@model EntryDetailsDTO
+
+<div class="accordion-item">
+    <h2 class="accordion-header" id="@("heading" + Model.EntryId)">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#@("collapse" + Model.EntryId)" aria-expanded="false" aria-controls="@("collapse" + Model.EntryId)">
+            <p class="m-0"><strong>@Model.UserName:</strong> @Model.EntryDate.ToString("dd/MM/yyyy")</p>
+        </button>
+    </h2>
+    <div id="@("collapse" + Model.EntryId)" class="accordion-collapse collapse" aria-labelledby="@("heading" + Model.EntryId)" data-bs-parent="#accordionEntry">
+        <div class="accordion-body">
+            <h3>@Model.EntryTitle</h3>
+            @Model.EntryMessage
+        </div>
+    </div>
+</div>

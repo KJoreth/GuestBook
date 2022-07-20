@@ -1,0 +1,22 @@
+﻿@model EntriesViewModel
+@{
+    ViewData["Title"] = "Show all entries";
+}
+
+ 
+<partial name="_EntryNavbar" model="@Model"/>
+
+
+<div class="accordion" id="accordionEntry">
+    <partial name="_EntryActive" model="@Model.Entries[0]"/>
+
+  @foreach(var entry in Model.Entries.Skip(1))
+    {
+        <partial name="_Entry" model="entry" />
+    }
+</div>
+
+
+<partial name="_EntryNavbar" model="@Model"/>
+
+

@@ -1,0 +1,60 @@
+﻿
+@model EntryCreateDTO
+
+@{
+    ViewData["Title"] = "Add new entry";
+}
+
+<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+
+
+@if(ViewBag.Msg != null)
+{
+    <script>
+        alert('@ViewBag.Msg');
+    </script>
+}
+
+
+@using (Html.BeginForm("Create", "Entry"))
+{
+    <div class="form-group mt-5 mb-3">
+        <div class="input-group">
+            <span class="input-group-text" id="userAddon"><i class="icon-male"></i></span>
+            @Html.TextBoxFor(x => x.UserName, new { @class = "form-control", aria_describedby="userAddon", autofocus = "autofocus", placeholder = "Username..."})
+        </div>
+        <p class="text-danger">@Html.ValidationMessageFor(x => x.UserName)</p>
+    </div>
+
+    <div class="form-group mt-5 mb-3">
+        <div class="input-group">
+            <span class="input-group-text" id="emailAddon">&#64;</span>
+            @Html.TextBoxFor(x => x.Email, new { @class = "form-control", aria_describedby="emailAddon", autofocus = "autofocus", placeholder = "Email..."})
+        </div>
+        <p class="text-danger">@Html.ValidationMessageFor(x => x.Email)</p>
+    </div>
+
+    <div class="form-group mt-5 mb-3">
+        <div class="input-group mt-5 mb-3">
+            <span class="input-group-text" id="TitleAddon"><i class="icon-ok"></i></span>
+            @Html.TextBoxFor(x => x.EntryTitle, new { @class = "form-control", aria_describedby="titleAddon" ,autofocus = "autofocus", placeholder = "Title..." })
+        </div>
+        <p class="text-danger">@Html.ValidationMessageFor(x => x.EntryTitle)</p>
+    </div>
+
+    <div class="form-group mt-5 mb-3">
+        <div class="input-group mt-5 mb-3">
+            <span class="input-group-text" id="messageAddon"><i class="icon-pencil"></i></span>
+            @Html.TextBoxFor(x => x.EntryMessage, new { @class = "form-control", aria_describedby = "messageAddon", autofocus = "autofocus", placeholder = "Message..." })           
+        </div>
+        <p class="text-danger">@Html.ValidationMessageFor(x => x.EntryMessage)</p>
+    </div>
+
+    <div class="form-group">
+        <input type="submit" value="Create" class="btn btn-primary">
+    </div>
+}
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

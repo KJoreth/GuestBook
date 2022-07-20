@@ -1,0 +1,14 @@
+C:\Projects\GuestBook\GuestBook.Data\bin\Debug\net6.0\GuestBook.Data.deps.json
+C:\Projects\GuestBook\GuestBook.Data\bin\Debug\net6.0\GuestBook.Data.runtimeconfig.json
+C:\Projects\GuestBook\GuestBook.Data\bin\Debug\net6.0\GuestBook.Data.dll
+C:\Projects\GuestBook\GuestBook.Data\bin\Debug\net6.0\GuestBook.Data.pdb
+C:\Projects\GuestBook\GuestBook.Data\obj\Debug\net6.0\GuestBook.Data.csproj.AssemblyReference.cache
+C:\Projects\GuestBook\GuestBook.Data\obj\Debug\net6.0\GuestBook.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projects\GuestBook\GuestBook.Data\obj\Debug\net6.0\GuestBook.Data.AssemblyInfoInputs.cache
+C:\Projects\GuestBook\GuestBook.Data\obj\Debug\net6.0\GuestBook.Data.AssemblyInfo.cs
+C:\Projects\GuestBook\GuestBook.Data\obj\Debug\net6.0\GuestBook.Data.csproj.CoreCompileInputs.cache
+C:\Projects\GuestBook\GuestBook.Data\obj\Debug\net6.0\GuestBook.Data.dll
+C:\Projects\GuestBook\GuestBook.Data\obj\Debug\net6.0\refint\GuestBook.Data.dll
+C:\Projects\GuestBook\GuestBook.Data\obj\Debug\net6.0\GuestBook.Data.pdb
+C:\Projects\GuestBook\GuestBook.Data\obj\Debug\net6.0\GuestBook.Data.genruntimeconfig.cache
+C:\Projects\GuestBook\GuestBook.Data\obj\Debug\net6.0\ref\GuestBook.Data.dll

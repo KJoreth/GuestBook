@@ -261,3 +261,9 @@ C:\Projects\GuestBook\GuestBook\bin\Debug\net6.0\runtimes\unix\lib\net6.0\System
 C:\Projects\GuestBook\GuestBook\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
 C:\Projects\GuestBook\GuestBook\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
 C:\Projects\GuestBook\GuestBook\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+C:\Projects\GuestBook\GuestBook\bin\Debug\net6.0\Azure.Core.dll
+C:\Projects\GuestBook\GuestBook\bin\Debug\net6.0\Azure.Extensions.AspNetCore.Configuration.Secrets.dll
+C:\Projects\GuestBook\GuestBook\bin\Debug\net6.0\Azure.Identity.dll
+C:\Projects\GuestBook\GuestBook\bin\Debug\net6.0\Azure.Security.KeyVault.Secrets.dll
+C:\Projects\GuestBook\GuestBook\bin\Debug\net6.0\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Projects\GuestBook\GuestBook\bin\Debug\net6.0\System.Memory.Data.dll

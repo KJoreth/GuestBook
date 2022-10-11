@@ -1,10 +1,17 @@
+using Azure.Identity;
+using Azure.Security.KeyVault.Secrets;
+using System.Configuration;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
-var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
-builder.Services.AddCustomServices(connectionString);
+var kvUrl = builder.Configuration["AzureKeyVaultUrl"];
+var secretsClient = new SecretClient(new Uri(kvUrl), new DefaultAzureCredential());
+var sqlConnString = secretsClient.GetSecret("sql");
+builder.Services.AddCustomServices(sqlConnString.Value.Value);
+
 
 
 var app = builder.Build();
